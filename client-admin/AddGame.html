@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset = "utf-8">
+    <title> Main Menu </title>
+    <link rel="dndstylesheet" type="text/css" href="client/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  </head>
+  <body>
+    <div>
+    Choose an Existing Game
+    </div>
+    <div id="listofgames">
+    </div>
+    <div>
+    Create a New Game
+    </div>
+    <div>
+      <form method="POST" action="/uploadItems">
+        Choose a File: <br>
+        <input type="file" name="gamedata" accept="text/plain" id="gamedata"> <br>
+        <input type="submit" name="submit" id="submit"> <br>
+      </form>
+    </div>
+  </body>
+</html>
